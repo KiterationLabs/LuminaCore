@@ -118,3 +118,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+html,
+body,
+#root {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* prevents React from capturing mouse events */
+
+}
